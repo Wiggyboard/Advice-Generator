@@ -75,10 +75,6 @@ main {
     background: $neonGreen;
     cursor: pointer;
 
-    /* &:hover {
-      box-shadow: 0px 0px 25px 0px $neonGreen;
-    } */
-
     @media (hover: hover) {
       &:hover {
         box-shadow: 0px 0px 25px 0px $neonGreen;

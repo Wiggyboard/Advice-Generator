@@ -65,9 +65,6 @@ main button {
   border-radius: 100%;
   background: hsl(150deg, 100%, 66%);
   cursor: pointer;
-  /* &:hover {
-    box-shadow: 0px 0px 25px 0px $neonGreen;
-  } */
 }
 @media (hover: hover) {
   main button:hover {
