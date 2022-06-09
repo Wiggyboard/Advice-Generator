@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+html {
+  height: 100%;
+  min-height: var(--app-height);
+  margin: 0;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  background: hsl(218deg, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 90vw;
+  min-width: 32rem;
+  max-width: 52rem;
+  background: hsl(217deg, 19%, 24%);
+  border-radius: 1.2rem;
+}
+main #advice-number {
+  padding: 4em 0 0 0;
+  color: hsl(150deg, 100%, 66%);
+  font-size: 1.1em;
+  letter-spacing: 0.3em;
+}
+main #advice-quote {
+  padding: 1em 1em;
+  color: hsl(193deg, 38%, 86%);
+  font-size: 2.8em;
+  text-align: center;
+}
+main #divider {
+  padding: 1em 0 7em 0;
+}
+main button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -3.2rem;
+  height: 4.8em;
+  width: 4.8em;
+  border: none;
+  border-radius: 100%;
+  background: hsl(150deg, 100%, 66%);
+  cursor: pointer;
+  /* &:hover {
+    box-shadow: 0px 0px 25px 0px $neonGreen;
+  } */
+}
+@media (hover: hover) {
+  main button:hover {
+    box-shadow: 0px 0px 25px 0px hsl(150deg, 100%, 66%);
+  }
+}
+main button #dice {
+  transform-style: preserve-3d;
+}
+
+@-webkit-keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  color: hsl(193deg, 38%, 86%);
+  font-weight: 400;
+}
+@media (max-width: 600px) {
+  .attribution {
+    bottom: 1rem;
+  }
+}
+.attribution a {
+  color: hsl(193deg, 38%, 86%);
+}/*# sourceMappingURL=styles.css.map */
